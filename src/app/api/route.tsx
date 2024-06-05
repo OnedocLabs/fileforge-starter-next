@@ -2,6 +2,8 @@ import { Template } from "@/templates";
 import { compile } from "@fileforge/react-print";
 import { FileforgeClient } from "@fileforge/client";
 
+export const dynamic = "force-dynamic";
+
 const ff = new FileforgeClient({
   apiKey: process.env.NEXT_FILEFORGE_API_KEY,
 });
