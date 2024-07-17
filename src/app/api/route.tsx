@@ -28,3 +28,30 @@ export const GET = async () => {
     url,
   });
 };
+
+/**
+export const GET = async () => {
+  const html = await compile(<Template />);
+
+  const file = await ff.pdf.generate(
+    [
+      new File([html], "index.html", {
+        type: "text/html",
+      }),
+    ],
+    {
+      options: {
+        host: false,
+      },
+    }
+  );
+
+  return new Response(file as unknown as BodyInit, {
+    status: 200,
+    headers: new Headers({
+      "Content-Type": "application/pdf",
+      "Content-Disposition": `attachment; filename="file.pdf"`,
+    }),
+  });
+};
+*/
